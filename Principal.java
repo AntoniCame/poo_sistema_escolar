@@ -1,12 +1,26 @@
 public class Principal {
     public static void main(String[] args) {
-        Person persona = new Person("Juan", 20);
-        persona.yourself();
-
+        Person person01 = new Person("Juan", 20);
+        Estudiante estudiante01 = new Estudiante("1234123", "UAEM", "Ingeniería en Sistemas Inteligentes");
+        person01.yourself();
+        estudiante01.informacionE();
         System.out.println();
 
-        Person persona02 = new Person("Villagran Jorge", 19);
-        persona.yourself();
+        Person person02 = new Person("Villagran Flores", 19);
+        Estudiante estudiante02 = new Estudiante("1235123", "UAEM", "Ingeniería en Sistemas Inteligentes");
+        person02.yourself();
+        estudiante02.informacionE();
+        System.out.println();
 
+        Person person03 = new Person("Montoya", 19);
+        Estudiante estudiante03 = new Estudiante("1236123", "UAEM", "Ingeniería en Sistemas Inteligentes");
+        person03.yourself();
+        estudiante03.informacionE();
+        System.out.println();
+
+        Person profesorA1 = new Person("Vinchenzo Acevedo", 35);
+        profesorA1.yourself();
+        Profesor profesorC = new Profesor("I2-P-456", "UAEM", "Ingeniería en Sistemas Inteligentes", "Programación", "I2");
+        profesorC.informacionP();
     }
 }
